@@ -5,7 +5,7 @@ Project Description
 This project is a web application that allows students to apply for internships online. The application provides a simple interface where students can view internship information and submit their application. The project is built using React with Vite and uses Express for handling APIs.
 
 Technologies Used
-React JS
+##React JS##
 TypeScript
 Vite
 Node.js
