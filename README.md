@@ -1,78 +1,161 @@
-Project Name
-Student Internship Application Portal
+# Student Internship Application Portal
 
-Project Description
-This project is a web application that allows students to apply for internships online. The portal provides a simple interface where students can view internship details and submit their applications. The project is developed using React with Vite and TypeScript, and it uses a backend server to handle API requests.
+A simple internship application system built using React that allows students to apply for internships and check the status of their applications.
 
-Technologies Used
-React JS
-TypeScript
-Vite
-Node.js
-Express
-HTML
-CSS
+## Project Overview
 
-Project Features
-Student Internship Application Form
-Navigation between pages
-GET API to retrieve internship details
-POST API to submit student applications
-Clean and simple user interface
+The Student Internship Application Portal is a web application where students can
 
-Project Folder Structure
+* View the homepage with project introduction
+* Apply for internships using a form
+* Check the status of submitted applications
 
-index.html
-Main HTML file that loads the React application.
+The application communicates with backend APIs using GET and POST requests.
 
-server.ts
-Backend server file used to create APIs.
+## Folder Structure
 
-vite.config.ts
-Configuration file for running the Vite development server.
+```
+student-internship-app
+│
+├── src
+│   ├── components
+│   │     Navbar.js
+│   │
+│   ├── pages
+│   │     Home.js
+│   │     ApplyInternship.js
+│   │     ApplicationStatus.js
+│   │
+│   ├── services
+│   │     api.js
+│   │
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+│
+├── package.json
+└── README.md
+```
 
-package.json
-Contains project dependencies and scripts.
+## Features
 
-tsconfig.json
-TypeScript configuration file.
+* Navigation using React Router
+* Internship application form
+* GET API to fetch applications
+* POST API to submit applications
+* Status display such as Approved, Pending and Rejected
+* Simple responsive user interface
 
-src folder
-Contains all React source code.
+## Tech Stack
 
-src/main.tsx
-Entry point of the React application.
+Frontend Technologies
 
-src/App.tsx
-Main React component that controls the application layout.
+* React
+* React Router
+* Axios
+* CSS
 
-src/index.css
-CSS styles for the application.
+## Installation
 
-Installation Steps
+Clone the repository
 
-Step 1
-Download or clone the project to your computer.
+```
+git clone https://github.com/your-username/student-internship-app.git
+```
 
-Step 2
-Open the project folder in Visual Studio Code.
+Navigate to project folder
 
-Step 3
-Install the required dependencies
+```
+cd student-internship-app
+```
+
+Install dependencies
+
+```
 npm install
+```
 
-Step 4
-Start the development server
-npm run dev
+Install required libraries
 
-Step 5
-Open your browser and go to
-http://localhost:5173
+```
+npm install react-router-dom axios
+```
 
-API Information
+## Running the Application
 
-GET API
-Used to fetch internship details from the server.
+Start the React development server
 
-POST API
-Used to send student internship application data to the server.
+```
+npm start
+```
+
+Open the browser and go to
+
+```
+http://localhost:3000
+```
+
+## API Integration
+
+POST API – Submit Internship Application
+
+Endpoint
+
+```
+POST /apply
+```
+
+Example request body
+
+```
+{
+"name": "John Doe",
+"email": "john@example.com",
+"course": "Computer Science"
+}
+```
+
+GET API – Fetch Applications
+
+Endpoint
+
+```
+GET /applications
+```
+
+Example response
+
+```
+[
+{
+"name": "John Doe",
+"email": "john@example.com",
+"status": "Pending"
+}
+]
+```
+
+## Styling
+
+Basic styling is implemented using CSS in App.css.
+
+Application status colors
+
+* Approved
+* Pending
+* Rejected
+
+## Future Improvements
+
+* Admin dashboard to update application status
+* Authentication system for students
+* Database integration
+* Improved UI design
+
+## Author
+
+Developed as a React project for internship application management.
+
+## License
+
+This project is open source and available for learning and educational purposes.
