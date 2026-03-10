@@ -2,10 +2,10 @@ Project Name
 Student Internship Application Portal
 
 Project Description
-This project is a web application that allows students to apply for internships online. The application provides a simple interface where students can view internship information and submit their application. The project is built using React with Vite and uses Express for handling APIs.
+This project is a web application that allows students to apply for internships online. The portal provides a simple interface where students can view internship details and submit their applications. The project is developed using React with Vite and TypeScript, and it uses a backend server to handle API requests.
 
 Technologies Used
-##React JS##
+React JS
 TypeScript
 Vite
 Node.js
@@ -15,10 +15,10 @@ CSS
 
 Project Features
 Student Internship Application Form
-Navigation between multiple pages using React Router
-GET API to fetch internship details
-POST API to submit internship application
-Minimal and clean user interface
+Navigation between pages
+GET API to retrieve internship details
+POST API to submit student applications
+Clean and simple user interface
 
 Project Folder Structure
 
@@ -26,16 +26,16 @@ index.html
 Main HTML file that loads the React application.
 
 server.ts
-Backend server created using Express to handle API requests.
+Backend server file used to create APIs.
 
 vite.config.ts
-Configuration file for Vite development server.
+Configuration file for running the Vite development server.
 
 package.json
 Contains project dependencies and scripts.
 
 tsconfig.json
-TypeScript configuration for the project.
+TypeScript configuration file.
 
 src folder
 Contains all React source code.
@@ -44,42 +44,35 @@ src/main.tsx
 Entry point of the React application.
 
 src/App.tsx
-Main React component that manages navigation and UI.
+Main React component that controls the application layout.
 
 src/index.css
-Styles for the application.
+CSS styles for the application.
 
 Installation Steps
 
 Step 1
-Download or clone the project.
+Download or clone the project to your computer.
 
 Step 2
-Open the project folder in VS Code.
+Open the project folder in Visual Studio Code.
 
 Step 3
-Install project dependencies using
+Install the required dependencies
 npm install
 
 Step 4
-Run the backend and frontend using
+Start the development server
 npm run dev
 
 Step 5
-Open the browser and visit
+Open your browser and go to
 http://localhost:5173
 
 API Information
 
 GET API
-Used to retrieve internship information from the server.
+Used to fetch internship details from the server.
 
 POST API
-Used to send student internship application details to the server.
-
-Future Improvements
-
-Add authentication for students
-Add admin panel for managing internships
-Store applications in database
-Add email notification after application submission
+Used to send student internship application data to the server.
