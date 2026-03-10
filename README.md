@@ -1,47 +1,53 @@
-Here is a **simple README template** for your **Student Internship Application (InternshipHub)** project.
-I removed **symbols like #, ---, and markdown lines** so you can directly paste it into your `README.md`.
-
+Project Name
 Student Internship Application Portal
 
-Project Name
-InternshipHub – Student Internship Application Portal
-
 Project Description
-This project is a web application built using React that allows students to apply for internships through an online portal. The system provides a simple and clean interface where students can view internship information and submit applications. The application follows a minimalist design with easy navigation.
+This project is a web application that allows students to apply for internships online. The application provides a simple interface where students can view internship information and submit their application. The project is built using React with Vite and uses Express for handling APIs.
 
 Technologies Used
 React JS
+TypeScript
 Vite
-JavaScript / TypeScript
+Node.js
+Express
 HTML
 CSS
-REST APIs
 
 Project Features
 Student Internship Application Form
-Navigation between multiple pages
-GET API to fetch internship information
-POST API to submit internship applications
-Simple and clean user interface
-Responsive layout for better usability
+Navigation between multiple pages using React Router
+GET API to fetch internship details
+POST API to submit internship application
+Minimal and clean user interface
 
-Project Structure
-index.html – Main HTML file
-src/main.tsx – React application entry point
-src/App.tsx – Main application component
-src/index.css – Styling for the application
-server.ts – Backend server for APIs
-package.json – Project dependencies and scripts
-vite.config.ts – Vite configuration
+Project Folder Structure
 
-Navigation Pages
-Home Page – Displays internship portal introduction
-Internship Page – Shows internship details
-Apply Page – Allows students to submit internship applications
+index.html
+Main HTML file that loads the React application.
 
-APIs Used
-GET API – Retrieves internship details from the server
-POST API – Sends student application data to the server
+server.ts
+Backend server created using Express to handle API requests.
+
+vite.config.ts
+Configuration file for Vite development server.
+
+package.json
+Contains project dependencies and scripts.
+
+tsconfig.json
+TypeScript configuration for the project.
+
+src folder
+Contains all React source code.
+
+src/main.tsx
+Entry point of the React application.
+
+src/App.tsx
+Main React component that manages navigation and UI.
+
+src/index.css
+Styles for the application.
 
 Installation Steps
 
@@ -52,24 +58,28 @@ Step 2
 Open the project folder in VS Code.
 
 Step 3
-Install dependencies using
+Install project dependencies using
 npm install
 
 Step 4
-Run the development server using
+Run the backend and frontend using
 npm run dev
 
 Step 5
-Open the browser and go to
-[http://localhost:5173](http://localhost:5173)
+Open the browser and visit
+http://localhost:5173
+
+API Information
+
+GET API
+Used to retrieve internship information from the server.
+
+POST API
+Used to send student internship application details to the server.
 
 Future Improvements
-Add login and authentication system
-Add admin dashboard for managing internships
-Store applications in a database
-Add email confirmation for applications
 
-Author
-ADAVALA JAHNAVI
-
-If you want, I can also give you a **shorter README (best for GitHub submission)** or a **professional README that looks very impressive for internships and college submissions**.
+Add authentication for students
+Add admin panel for managing internships
+Store applications in database
+Add email notification after application submission
